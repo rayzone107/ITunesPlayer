@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ITunes Player</string>
+    <string name="listen_to_your_favourite_songs_online">Listen to your favourite \nsongs on iTunes</string>
+    <string name="try_again">Try Again</string>
+    <string name="oh_snap">Oh Snap!</string>
+    <string name="no_internet_error_message">Your internet connection seems to be on the run, and unless you catch it, we can\'t do much for you.</string>
+    <string name="oops_something_went_wrong">OOPS! Something went wrong!</string>
+    <string name="something_went_wrong_error_message">While we figure out what that is, and fix it for you, why don\'t you take a break.</string>
+    <string name="no_results_title">No Results</string>
+    <string name="no_results">Wow! That search came back empty. Can\'t help you there. You might want to change your search.</string>
+    <string name="empty_title">Nothing searched yet</string>
+    <string name="empty_error">Search above for your \nfavourite songs on ITunes</string>
+    <string name="empty_favourites_title">No Favourites Yet</string>
+    <string name="empty_favourites_error">Mark songs as favourite to see them here</string>
+    <string name="mplayer">MPlayer</string>
+    <string name="search_music_hint">Search Music Title, Artists, Movie, etc.</string>
+    <string name="time_zero">0.00</string>
+    <string name="time_30_secs">- 0.30</string>
+    <string name="favourites">Favourites</string>
+    <string name="delete">DELETE</string>
+    <string name="recent_songs">Recently Played Songs - %d</string>
+    <string name="all_songs">All Songs - %d</string>
+</resources>

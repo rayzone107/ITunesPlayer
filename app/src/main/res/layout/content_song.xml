@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    tools:context=".modules.song.SongActivity"
+    tools:showIn="@layout/activity_song">
+
+    <ImageView
+        android:id="@+id/play_pause_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/play_pause_bg"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:padding="25dp"
+        android:src="@drawable/ic_pause"
+        android:transitionName="image_transition"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/buffering_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/play_pause_iv"
+        android:layout_alignLeft="@id/play_pause_iv"
+        android:layout_alignRight="@id/play_pause_iv"
+        android:layout_alignTop="@id/play_pause_iv"
+        android:indeterminate="true"
+        android:padding="10dp" />
+
+    <ImageView
+        android:id="@+id/list_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/play_pause_iv"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/play_pause_iv"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:padding="20dp"
+        android:src="@drawable/ic_menu" />
+
+    <ImageView
+        android:id="@+id/favourite_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/play_pause_iv"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/play_pause_iv"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:padding="20dp"
+        android:src="@drawable/ic_favourite_disabled" />
+
+    <TextView
+        android:id="@+id/artist_album_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/play_pause_iv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/hint_gray"
+        android:textSize="16sp"
+        tools:text="Artist Name | Album Name" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/artist_album_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Title of Track" />
+
+    <TextView
+        android:id="@+id/current_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/title_tv"
+        android:layout_marginLeft="35dp"
+        tools:text="1:24" />
+
+    <TextView
+        android:id="@+id/pending_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/title_tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        tools:text="-2:13" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_above="@id/current_time_tv"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:max="30000"
+        android:progressBackgroundTint="@color/seek_blue"
+        android:progressTint="@color/seek_blue"
+        android:thumbTint="@color/thumb_blue"
+        tools:progress="13000" />
+
+    <ImageView
+        android:id="@+id/image_iv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_above="@id/seek_bar"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+</RelativeLayout>
